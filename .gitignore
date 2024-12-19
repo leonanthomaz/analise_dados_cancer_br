@@ -1,0 +1,8 @@
+# Pasta virtual environment (venv)
+venv/
+
+# arquivo CSV
+cancer_data_eng.csv
+
+# pasta data
+data/
