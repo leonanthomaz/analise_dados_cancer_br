@@ -10,12 +10,12 @@ api = KaggleApi()
 api.authenticate()
 
 # Baixando o dataset do Kaggle
-dataset_name = 'joaopedromedeiros/cancer-data-brazil'  # Substitua pelo nome correto do dataset
-download_path = 'data/'  # Diretório onde o dataset será salvo
+dataset_name = 'joaopedromedeiros/cancer-data-brazil'
+download_path = 'data/' 
 api.dataset_download_files(dataset_name, path=download_path, unzip=True)
 
 # Lendo o dataset
-csv_file = os.path.join(download_path, 'cancer_data_eng.csv')  # Substitua pelo nome correto do arquivo CSV
+csv_file = os.path.join(download_path, 'cancer_data_eng.csv')
 df = pd.read_csv(csv_file, encoding='ISO-8859-1')
 pd.set_option('display.max_columns', None)
 
