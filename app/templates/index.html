@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Inicial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color: rgb(251, 244, 235);">
+    <div class="container mt-4">
+        <h1 class="text-center">Dashboard de Análises - Dados de Câncer</h1>
+        
+        <p class="text-center mt-3" style="font-size: 0.9em;">Dados do Câncer Brasil - Dados de pacientes de centros de câncer no Brasil de 2000 a 2019, fonte: <a href="https://www.kaggle.com/datasets/joaopedromedeiros/cancer-data-brazil" target="_blank">https://www.kaggle.com/datasets/joaopedromedeiros/cancer-data-brazil</a></p>
+
+        <div class="row mt-5">
+            <!-- Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Análise por Gênero</h5>
+                        <p class="card-text">Veja a distribuição de diagnósticos por gênero.</p>
+                        <a href="/gender_analysis" class="btn btn-primary">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Distribuição de Idades</h5>
+                        <p class="card-text">Explore as faixas etárias mais diagnosticadas.</p>
+                        <a href="/age_distribution" class="btn btn-primary">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 (Comentado) -->
+            <!-- <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Frequência de Doenças</h5>
+                        <p class="card-text">Descubra os tipos de doenças mais comuns.</p>
+                        <a href="/disease_frequency" class="btn btn-primary">Visualizar</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Card 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Análise por Faixa Etária</h5>
+                        <p class="card-text">Descubra os tipos de câncer mais comuns por faixa etária.</p>
+                        <a href="/diseases_by_age" class="btn btn-primary">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Cânceres Mais Comuns em jovens</h5>
+                        <p class="card-text">Descubra os tipos de câncer mais comuns em jovens.</p>
+                        <a href="/youth_cancer_analysis" class="btn btn-primary">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
